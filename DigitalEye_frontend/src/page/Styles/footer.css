@@ -1,0 +1,53 @@
+.fh {
+  background-image: linear-gradient(
+    to right,
+    #6351ce,
+    #6351ce 50%,
+    #fff 50%
+  );
+    background-image: linear-gradient(
+      to right,
+      #6351ce,
+      #6351ce 50%,
+      #fff 50%
+    );
+
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+.fh:before{
+  content: '';
+  background: #6351ce;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.fh:hover {
+ background-position: 3px;
+}
+
+
+.fh:hover::before{
+  width: 100%;
+  padding-top: 3px;
+}
+
+
+
+
+
